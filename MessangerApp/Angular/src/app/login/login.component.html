@@ -1,0 +1,27 @@
+
+
+
+ <div class = "set login-container">
+  <div class="col-md-6 login-form-1">
+                     <h3>User Login</h3>
+                     <form (submit)="login()">
+                            <div class="alert alert-danger" role="alert" *ngIf="check">
+                                    Invalid Email/Password
+                            </div>
+                         <div class="form-group">
+                         <Label>Enter Email</Label>
+                             <input type="text"  name="email" [(ngModel)]="email" class="form-control" />
+                         </div>
+                         <div class="form-group">
+                             <label>Enter Password</label>
+                             <input  type="password" class="form-control" name="password" [(ngModel)]="password">
+                         </div>
+                         <div class="form-group">
+                             <input type="submit" class="btnSubmit" value="Login" />
+                         </div>
+                         <div class="form-group">
+                             <a  routerLink="/reg" class="signup">SignUp</a>
+                         </div>
+                     </form>
+                 </div>
+                 </div>

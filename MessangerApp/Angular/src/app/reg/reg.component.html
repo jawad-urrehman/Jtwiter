@@ -1,0 +1,32 @@
+
+<div class = "set login-container">
+  <div class="col-md-6 login-form-1">
+ 
+                     <h3>User Registration</h3>
+                     <div class="alert alert-danger" role="alert" *ngIf="check">
+                             Email Already Taken!
+                     </div>
+                     <form [formGroup]="myFrom" (submit)="regUser()"> 
+                         <div class="form-group">
+                         <Label>Enter UserName</Label>
+                             <input type="text" class="form-control" formControlName= "name" name="name" autocomplete="off"/>
+                             <small *ngIf = "myFrom.get('name').touched && myFrom.get('name').invalid">Enter Valid UserName </small>
+                         </div>
+                         <div class="form-group">
+                             <label>Enter Email</label>
+                             <input type="email" class="form-control" formControlName ="email"  name="email" autocomplete="off" />
+                             <small *ngIf = "myFrom.get('email').touched && myFrom.get('email').invalid">Enter Valid Email </small>
+                         </div>
+                         <div class="form-group">
+                                 <label>Enter Password</label>
+                                 <input type="password"  formControlName ="password" name="password" autocomplete="off" class="form-control" />
+                                 <small *ngIf = "myFrom.get('password').touched && myFrom.get('password').invalid">Enter Valid Password </small>
+                             </div>
+ 
+                         <div class="form-group">
+                                <button type="submit" [disabled] = "!myFrom.valid" class="btn btnSubmit btn-success ">SignUp</button>
+                         </div>
+                         
+                     </form>
+                 </div>
+                 </div>

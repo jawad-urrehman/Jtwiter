@@ -1,0 +1,33 @@
+
+<div class = "set login-container">
+    <div class="col-md-6 login-form-1">
+   
+                       <h3>Update User Profile</h3>
+                       <form [formGroup]="myFrom" (submit)="updateUser()"> 
+                           <div class="form-group">
+                           <Label>UserName</Label>
+                               <input type="text" class="form-control" formControlName= "name" name="name" autocomplete="off"/>
+                               <small *ngIf = "myFrom.get('name').touched && myFrom.get('name').invalid">Enter Valid UserName </small>
+                           </div>
+                           <div class="form-group">
+                               <label>Enter Email</label>
+                               <input type="email" class="form-control"  formControlName ="email"  name="email" autocomplete="off" />
+                               <small *ngIf = "myFrom.get('email').touched && myFrom.get('email').invalid">Enter Valid Email </small>
+                           </div>
+                           <div class="form-group">
+                                   <label>Enter Password</label>
+                                   <input type="text"  formControlName ="password" name="password" autocomplete="off" class="form-control" />
+                                   <small *ngIf = "myFrom.get('password').touched && myFrom.get('password').invalid">Enter Valid Password </small>
+                               </div>
+   
+                           <div class="form-group">
+                                  <button type="submit" [disabled] = "!myFrom.valid" class="btn btnSubmit btn-success ">Update</button>
+                           </div>
+                           <div class="form-group">
+                            <a  (click) = "deleteUser()" class="signup">DeActivate Account</a>
+                        </div>                         
+                       </form>
+                   </div>
+                   </div>
+  
+

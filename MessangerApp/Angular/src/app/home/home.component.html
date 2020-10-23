@@ -1,0 +1,18 @@
+
+<div class="container">
+    <div *ngFor="let msg of msgs">
+        <div class="card " style="margin-right:150px;margin-left:150px;width:1000px;">
+            <div class="card-footer bg-secondary text-white  ">
+              {{msg.userName}}
+                
+            </div>
+            <div class="card-body">
+              <blockquote class="blockquote mb-0">
+                <p>{{msg.content}}</p>
+              </blockquote>
+            </div>
+          </div>
+          
+        <br>
+    </div>
+</div>

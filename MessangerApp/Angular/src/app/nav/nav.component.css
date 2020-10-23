@@ -1,0 +1,9 @@
+.dropdown:hover>.dropdown-menu{
+    display: block;
+}
+.set{
+    padding-left: 10px
+}
+.set2{
+    padding-right: 150px;
+}

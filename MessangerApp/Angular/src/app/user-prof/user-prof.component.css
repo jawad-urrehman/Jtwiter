@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.login-container{
+    margin-bottom: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-bottom: 5%;
+    
+}
+.login-form-1 .signup{
+    font-weight: 600;
+    color: red;
+margin-left: 150px;
+}
+
+small{
+    color: red;
+}
+
+.login-form-1{
+    padding-top: 5%;
+    padding-right: 5%;
+    padding-left: 5%;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+}
+.login-form-1 h3{
+    text-align: center;
+    color:#0a64f5;
+    padding-bottom: 15px;
+}
+
+.login-form-1 input{
+    padding-bottom: 15px;
+}
+
+.set{  
+    
+    padding-left: 450px;
+    padding-top: 50px;
+}
+.login-container form{
+    padding: 10%;
+}
+.btnSubmit
+{
+    width: 50%;
+    border-radius: 1rem;
+    padding: 1.5%;
+    border: none;
+    cursor: pointer;
+    margin-top: 15px;
+}
+label{
+    color: #0062cc;
+    padding-bottom: 5px;
+}
+.login-form-1 .btnSubmit{
+    font-weight: 600;
+    color: #fff;
+    background-color:green;
+}
+input.ng-touched.ng-invalid{
+    border:1px solid red;
+}
+input{
+    padding:10px
+}

@@ -1,0 +1,13 @@
+<div class="container ">
+    <form [formGroup]="myFrom">  
+  <div class= "form-group">
+      <label >Enter Twitte</label>
+      <input type="text" class="form-control" [(ngModel)]="content"  formControlName= "content" name="content" placeholder="please enter twitee here" autocomplete="off"/>
+        <small *ngIf = "myFrom.get('content').touched && myFrom.get('content').invalid">Please enter Twitee </small>
+    </div>
+    <button class="btn btn-success" (click)=" findUser()" [disabled] = "!myFrom.valid">Twitte</button>
+    </form>
+
+    <hr>
+    <app-show-msg></app-show-msg>
+</div>

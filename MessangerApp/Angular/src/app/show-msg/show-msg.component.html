@@ -1,0 +1,21 @@
+<div class="container">
+<div *ngFor="let msg of Usermsgs">
+    <div class="card " style="margin-right:150px;margin-left:150px;width:1000px;">
+        <div class="card-footer bg-secondary text-white  ">
+          {{msg.userName}}
+          <a class="float-right text-white" style="margin-right:15px;margin-top:5px" [routerLink]="['/edit',msg._id]" ><i class="far fa-edit"></i></a>
+          <a class="float-right text-white " style="margin-right:25px;margin-top:5px" (click)= "deltemessage(msg._id)"><i class="far fa-trash-alt"></i></a>
+          
+        </div>
+        
+        <div class="card-body">
+          <blockquote class="blockquote mb-0">
+            <p>{{msg.content}}</p>
+            
+          </blockquote>
+        </div>
+      </div>
+      
+    <br>
+</div>
+</div>
